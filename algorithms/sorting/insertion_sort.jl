@@ -1,6 +1,6 @@
 
 
-function insertionsort(v)
+function insertionsort!(v)
     for (i, key) in enumerate(v)
         
         while i > 1 && v[i-1] > key
@@ -15,6 +15,6 @@ end
 v = [144 89 4 9 95 12 86 25]
 println("unsorted array = ",v)
 
-sorted_v = insertionsort(v)
+insertionsort!(v)
 
-println("insertion sorted array = ", sorted_v)
+println("insertion sorted array = ", v)
