@@ -51,10 +51,10 @@ end
 
 m = string2matrix("004300209005009001070060043006002087190007400050083000600000105003508690042910300")
 
-println("Original :")
+println("\nOriginal :")
 show(stdout, MIME("text/plain"), m)
 
 sudokusolve!(m)
 
-println("Solved :")
+println("\n\nSolved :")
 show(stdout, MIME("text/plain"), m)
