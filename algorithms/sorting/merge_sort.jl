@@ -4,7 +4,7 @@ function mergesort(v)
     if lv == 1
         return v
     else
-        return fusion(fusionsort(@view v[1:lv÷2]), fusionsort(@view v[lv÷2+1:end]))
+        return merge(mergesort(@view v[1:lv÷2]), mergesort(@view v[lv÷2+1:end]))
     end
 end
 
